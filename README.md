@@ -1,12 +1,12 @@
 # IONP Simulations
 Still in developement phase!
 
-#What is needed to run the Simulations
+What is needed to run the Simulations
 
 1) C++ compiler (C++17 or newer)
 2) cmake (min 3.16.)
 
-#How to compile the Simulations
+How to compile the Simulations
 
 1) create build folder in the simulation folder
 2) open terminal in build folder and run:
@@ -14,8 +14,9 @@ Still in developement phase!
 3) then run:
       make
 4) after that the C++ program is compiled and the executable file is in "/simulation/build/src/ionp/" and is called "IONP"
+5) for output create folder "data" and subfolders "data/log" and "data/tmp"
 
-#How to set parameters for a Simulation
+How to set parameters for a Simulation
 
 Write the parameters in .txt/.dat file and put the file in the "simulation/ini" folder
 Important: All .txt or .dat files in this folder are read for simulations - it is possible to put multiple files in this folder to run multiple simulations one after the other!!!
@@ -95,10 +96,10 @@ In "simulation/ini/DLS_File" it is possible to include a Histogramm file that co
 Output is in "simulation/data" folder with a log in "simulation/data/log"
 and the actual files in "simulation/data/tmp"
 
-#How to run Simulation
+How to run Simulation
 
 1) run the executable IONP file in folder "/simulation/build/src/ionp/" (depending on operating system what kind of file)
 
-#Contact
+Contact
 
 lauritz.kluender@uni-muenster.de
