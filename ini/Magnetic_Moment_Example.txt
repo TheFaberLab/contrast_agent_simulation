@@ -1,0 +1,10 @@
+IONP_radius = 0.000000071817
+IONP_radius_std = 0.5233
+Magnetic_Moment = 5.175e-19
+Conc = 90
+IONP_num = 21
+Proton_num = 10000
+T_E = 0.1
+Length = 0.00005
+Nodes = 200
+Sequence = FID

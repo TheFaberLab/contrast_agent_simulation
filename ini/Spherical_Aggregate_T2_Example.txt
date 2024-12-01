@@ -1,0 +1,13 @@
+IONP_radius = 0.0000000049
+IONP_radius_std = 0.53
+Agg_num = 123
+Agg_radius = 0.00000018
+Conc = 100
+IONP_num = 21
+Proton_num = 10000
+T_E = 0.1
+Length = 0.00005
+time_step = 3.55556e-07
+Nodes = 200
+echo_spacing = 0.001
+Sequence = MSE

@@ -1,0 +1,11 @@
+IONP_radius = 0.00000011
+IONP_radius_std = 0.357
+Conc = 97.15
+IONP_num = 21
+Proton_num = 10000
+T_E = 0.1
+Length = 0.0003
+T2 = 0.119
+Nodes = 200
+echo_spacing = 0.0065
+Sequence = MSE

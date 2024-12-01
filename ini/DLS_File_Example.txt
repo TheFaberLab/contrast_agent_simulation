@@ -1,0 +1,10 @@
+IONP_radius = 0.0000001825
+IONP_radius_std = 0.45
+Conc = 111.16
+IONP_num = 21
+Proton_num = 10000
+T_E = 0.1
+Length = 0.0003
+Nodes = 200
+Sequence = FID
+DLS_file = Yes

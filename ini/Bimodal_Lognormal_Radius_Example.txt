@@ -1,0 +1,14 @@
+IONP_radius = 0.000000004
+IONP_radius_std = 0.48
+IONP_radius_1 = 0.0000000125
+IONP_radius_std_1 = 0.3
+IONP_per = 21
+Coating = 0.0000000321
+IONP_num = 150
+Proton_num = 10000
+T_E = 0.1
+Length = 0.00001
+time_step = 5e-07
+T2 = 0.09
+Nodes = 200
+Sequence = FID

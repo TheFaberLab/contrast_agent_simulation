@@ -1,0 +1,16 @@
+#ifndef MEDPHYSTOOLBOX_CONFIG_HPP
+#define MEDPHYSTOOLBOX_CONFIG_HPP
+
+// this is a basic example of how a CMake configured file might look
+// in this particular case, we are using it to set the version number of our executable
+namespace MedPhysToolbox {
+  static constexpr std::string_view APP_NAME = "@PROJECT_NAME@";
+  static constexpr std::string_view APP_VERSION = "@PROJECT_VERSION@";
+  static constexpr int APP_VERSION_MAJOR { @PROJECT_VERSION_MAJOR@ };
+  static constexpr int APP_VERSION_MINOR { @PROJECT_VERSION_MINOR@ };
+  static constexpr int APP_VERSION_PATCH { @PROJECT_VERSION_PATCH@ };
+  static constexpr int APP_VERSION_TWEAK { @PROJECT_VERSION_TWEAK@ };
+  static constexpr std::string_view git_sha = "@GIT_SHA@";
+} // namespace MedPhysToolbox
+
+#endif // ifndef MEDPHYSTOOLBOX

@@ -1,0 +1,6 @@
+IONP_radius = 0.0000001
+IONP_num = 162
+Proton_num = 10000
+T_E = 0.1
+Echo_spacing = 0.001
+Sequence = MSE
