@@ -54,7 +54,7 @@ void MRsequence::replaceProton(std::vector<Proton>& protonInstances, std::vector
 		else {
 			lastPosition = protonInstances[i].xt();
 			currentProtonInstance = protonInstances[i];
-			currentProtonInstance.diffuse(D_D_CONST, dt, RandomDiff.getNumber(), RandomDiff.getNumber(), RandomDiff.getNumber());
+			currentProtonInstance.diffuse(D_D_CONST, dt, RandomDiff.getNumber(), RandomDiff.getNumber());
 		}
 
 		if (abs(currentProtonInstance.xt().x()) > simMatrix.xLength() / 2.) { //check if proton outside simulation volume -> periodocity (placed opposite side)
@@ -160,7 +160,7 @@ void MRsequence::Sequence(std::vector<Proton>& protonInstances, std::vector<Ionp
 		RandomList RandomNormalX( -simMatrix.xLength() / 2., simMatrix.xLength() / 2., false );
 		RandomList RandomNormalY( -simMatrix.yLength() / 2., simMatrix.yLength() / 2., false );
 		RandomList RandomNormalZ( -simMatrix.zLength() / 2., simMatrix.zLength() / 2., false );
-		RandomList RandomDiff( -1., 1., false );
+		RandomList RandomDiff( 0., 1., false );
 
 		#pragma omp for
 		for (unsigned int i = 0; i < SC_UI(protons_n); ++i) {

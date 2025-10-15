@@ -132,13 +132,13 @@ void Particle::placeRandomSphere(double x, double y, double z, double r_min, dou
 
 }
 
-void Particle::diffuse(double d, double dt, double x, double y, double z) {
+void Particle::diffuse(double d, double dt, double theta_rand, double phi_rand) { 
 
-	double norm = sqrt(square(x) + square(y) + square(z));
+	double theta_p = TWO_PI * theta_rand;
+	double phi_p = acos(1. - 2. * phi_rand);
+	double radial_p = sqrt(6 * d * dt);
 
-	double step = sqrt(6 * d * dt)/norm;
-
-	m_xt.set((m_xt.x() + step * x), (m_xt.y() + step * y), (m_xt.z() + step * z));
+	m_xt.set((m_xt.x() + sin(phi_p) * cos(theta_p) * radial_p), (m_xt.y() + sin(phi_p) * sin(theta_p) * radial_p), (m_xt.z() + cos(phi_p) * radial_p));
 
 }
 

@@ -37,7 +37,7 @@ public:
     void placeRandom(double x, double y, double z, bool init = false);
     void placeRandom(Point3D& center, double rmin, double rmax, bool init = false);
     void placeRandomSphere(double x0, double y0, double z0, double r_min, double r_max, bool init = false);
-    void diffuse(double d, double dt, double x, double y, double z);
+    void diffuse(double d, double dt, double theta_rand, double phi_rand);
     void diffuse(double x, double y, double z);
     void move(Point3D& direction, double velocity, double dt);
 
